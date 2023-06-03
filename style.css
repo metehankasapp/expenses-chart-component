@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "DM Sans", sans-serif;
+}
+
+.component-container {
+    width: 500px;
+    margin: 0 20px;
+}
+
+.top-card {
+    background-color: hsl(10, 79%, 65%);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.top-card .left span {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: hsl(33, 100%, 98%);
+}
+
+.top-card .left h5 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: hsl(33, 100%, 98%);
+}
+
+.top-card .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-card .icon img {
+    width: 60px;
+}
+
+.bottom-card {
+    background-color: hsl(33, 100%, 98%);
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.bottom-card h2 {
+    font-size: 30px;
+    margin-bottom: 70px;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+}
+
+.charts .chart-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.charts .chart-item .bar {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: hsl(10, 79%, 65%);
+}
+
+.charts .chart-item span {
+    font-size: 12px;
+    color: hsl(28, 10%, 53%);
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.cyan-bg {
+    background-color: hsl(186, 34%, 60%) !important;
+}
+
+.hoverable-amount span {
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(27, 66%, 92%) !important;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 !important;
+    position: absolute;
+    bottom: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background-color: hsl(27, 66%, 92%);
+}
+
+.bottom-card-footer .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bottom-card-footer .left h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+}
+
+.bottom-card-footer .left span {
+    font-size: 32px;
+    font-weight: 600;
+    color: hsl(25, 47%, 15%);
+}
+
+
+.bottom-card-footer .right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bottom-card-footer .right span {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+}
+
+.bottom-card-footer .right .sub-amount{
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(25, 47%, 15%);
+}
